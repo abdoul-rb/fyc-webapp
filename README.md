@@ -1,9 +1,6 @@
-# calculateur-impot
+# AWS, Azure et GCP : API, disponibilité et scalabilité
 
-> Formulaire permettant de calculer l&#39;impôt que l&#39;on va payer pour l&#39;année courante
-
-**Test avec Jest**
-
+Application listant dans un tableau quelques codes HTTP. Elle communique avec une API sur AWS Lambda qui récupère les données depuis une feuille de calcul Google Sheets.
 
 ## Build Setup
 
@@ -21,18 +18,7 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-## Variables
-`RATES_2021`             : Palier d'imposition d'une année: Max de la tranche de revenu, avec le taux d'imposition associé
-`taxableIncome`          : Revenu net imposable
-`incomeAfterTaxable`     : Revenu après impôt
-`taxAmount`              : Montant de l'impôt
-`taxPercentage`          : Pourcentage d'imposition
-`nbOfKids`               : Nombre d'enfants du foyer
-`nbOfKidsWithCMI`        : Nombre d'enfants bénéficiant de la CMI
-`isMarried`              : Etes-vous marié ?
-`householdPart`          : Nombre de parts du foyer fiscal
-`familyIncome`           : Quotient familial
 
-Le fichier formulas.js contient les fonctions à tester
+## TODO 
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Nous allons tenter de déployer cette application sur un bucket S3 d'AWS.
